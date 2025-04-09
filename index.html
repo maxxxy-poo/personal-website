@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#socials">Socials</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="container">
+    <!-- Left Side -->
+    <div class="left-column">
+      <img src="your-photo.jpg" alt="Your Photo" class="profile-pic" />
+      <h1>Your Name</h1>
+      <h3>Your Role / Title</h3>
+      <p class="bio">
+        Short professional bio here. Share your background, goals, or what you love working on.
+      </p>
+      <p class="signature">Your Signature</p>
+    </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
-    </section>
+    <!-- Right Side -->
+    <div class="right-column">
+      <!-- Expertise Section -->
+      <section class="expertise">
+        <h2>Expertise</h2>
+        <div class="expertise-grid">
+          <div><strong>Professionally drive</strong><br>Strategize resources effectively.</div>
+          <div><strong>Seamlessly leverage</strong><br>Repurpose customer service ideas.</div>
+          <div><strong>Interactively incubate</strong><br>Build high standards collaboratively.</div>
+          <div><strong>Globally streamline</strong><br>Initiate performance-based workflows.</div>
+        </div>
+      </section>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Insert a brief version of your resume or link to a downloadable PDF.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    </section>
-
-    <section id="socials">
-        <h2>Socials</h2>
-        <ul>
-            <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
-            <li><a href="https://github.com/yourprofile">GitHub</a></li>
-            <!-- Add more social links as needed -->
-        </ul>
-    </section>
-
-    <footer>
-        <p>© 2025 Your Name. All Rights Reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
+      <!-- Skills Section -->
+      <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+          <label>UI & UX</label>
+          <div class="progress"><div style="width: 67%;">67%</div></div>
+        </div>
+        <div class="skill">
+          <label>Market Research</label>
+          <div class="progress"><div style="width: 78%;">78%</div></div>
+        </div>
+        <div class="skill">
+          <label>Communication Skills</label>
+          <div class="progress"><div style="width: 89%;">89%</div></div>
+        </div>
+        <div class="skill">
+          <label>Professional Skill</label>
+          <div class="progress"><div style="width: 70%;">70%</div></div>
+        </div>
+        <div class="skill">
+          <label>Organizational Skills</label>
+          <div class="progress"><div style="width: 70%;">70%</div></div>
+        </div>
+      </section>
+    </div>
+  </div>
 </body>
 </html>

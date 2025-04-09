@@ -1,82 +1,116 @@
-/* Basic resets */
-* {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Set background color and font */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: #f4f4f4;
     color: #333;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  
+  .left-column {
+    flex: 1;
+    padding: 40px 30px;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+    background: #fdfdfd;
+  }
+  
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 25px;
+  }
+  
+  .left-column h1 {
+    font-size: 32px;
+    margin: 10px 0 5px;
+  }
+  
+  .left-column h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .bio {
+    font-size: 14px;
     line-height: 1.6;
-}
-
-/* Header */
-header {
-    background: #333;
+    color: #555;
+  }
+  
+  .signature {
+    margin-top: 40px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .right-column {
+    flex: 2;
+    padding: 40px;
+  }
+  
+  .right-column h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+  
+  .expertise-grid div {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .expertise-grid strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #111;
+  }
+  
+  .skills .skill {
+    margin-bottom: 25px;
+  }
+  
+  .skills label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .progress {
+    background: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 22px;
+  }
+  
+  .progress div {
+    background: #00cc88;
     color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Section styles */
-section {
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-/* Social links */
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-ul li a {
-    color: #0073e6;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    margin-top: 20px;
-}
+    padding-right: 10px;
+    text-align: right;
+    line-height: 22px;
+    height: 100%;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
